@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>{{ title }}</title>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div id="container">
+    <div><img src="img/logo.png" alt="{{ flair }}" id="logo"/></div>
+    <div class="box">
+        <p id="flair">{{ flair }}</p>
+        <div id="mainbox" ondragover="drag_handler(event)" ondrop="drop_handler(event)">
+            <table id="name-info">
+                <tr>
+                    <td><label for="fname" class="name">Student first name:</label></td>
+                    <td><input type="text" id="fname" class="name" name="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname" class="name">Student last name:</label></td>
+                    <td><input type="text" id="lname" class="name" name="lname"></td>
+                </tr>
+            </table>
+            <img src="img/btnimage.png" id="upload-button" onclick="handle_upload_click()">
+            <form><input type="file" id="uploadFile" class="hide"/></form>
+            <div class="upload-container" >
+                <div id="progressbox" class="hide">
+                    <div class="progress">
+                        <div  id="loading-bar"></div>
+                        <span id="percent-counter"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="progress-filename"></p>
+    <p id="fileUploadError" class="text-danger hide"></p>
+</div>
+</body>
+</html>

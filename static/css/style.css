@@ -1,0 +1,122 @@
+/* * {
+    border: 1px black solid;
+} */
+
+body {
+    background-color: #eee;
+    font-family: verdana;
+    font-size: 1em;
+    color: #8E8B8B;
+}
+
+#container {
+    width: 800px;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -400px;
+    overflow: hidden;
+}
+
+#logo {
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    position:relative;
+    text-align: center;
+}
+
+#flair {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 0.7em;
+}
+
+#info-prompt {
+    margin: 0 auto;    
+    margin-bottom: 20px;
+}
+
+#name-info {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#upload-button {
+    cursor: pointer;
+}
+
+.upload-container {
+    position: relative;
+    bottom: 0;
+}
+
+#progressbox {
+    position: absolute;
+    bottom: 27px;
+    width: 440px;
+    left: 97px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.text-danger {
+    font-size: 1em;
+    font-weight: 700;
+    color: #a94442;
+}
+
+.text-black {
+    font-weight: 700;
+    color: black;
+}
+
+.text-black p{
+    margin-top: 100px;
+}
+
+#loading-bar{
+    height: 100%;
+    width: 0%;
+    color: #aeaeea;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #0e90d2;
+    z-index: 1;
+    position: absolute;
+}
+
+.progress{
+    height:49px;
+}
+
+.progress span {
+    position: absolute;
+    top: 10;
+    z-index: 2;
+    text-align: center;
+    width: 0%;
+    color: black;
+}
+
+#percent-counter{
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+#progress-filename {
+    font-size: 0.8em;
+}
+
