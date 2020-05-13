@@ -78,6 +78,7 @@ body {
     font-size: 1em;
     font-weight: 700;
     color: #a94442;
+    text-align: center;
 }
 
 .text-black {
@@ -123,4 +124,5 @@ body {
 
 #progress-filename {
     font-size: 0.8em;
+    margin-left: 105px;
 }
