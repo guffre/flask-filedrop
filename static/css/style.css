@@ -29,9 +29,8 @@ body {
 }
 
 #flair {
-    margin-top: 50px;
-    margin-bottom: 50px;
     font-size: 0.7em;
+    height: 100px;
 }
 
 #info-prompt {
@@ -50,19 +49,25 @@ body {
 }
 
 #upload-button {
+    position: absolute;
     cursor: pointer;
+    z-index: 10;
+    left: 100px;
+    bottom: 0;
 }
 
 .upload-container {
     position: relative;
     bottom: 0;
+    margin-top: 80px;
 }
 
 #progressbox {
     position: absolute;
-    bottom: 21px;
+    bottom: 5px;
+    left: 105px;
     width: 440px;
-    left: 97px;
+    height: 49px;
 }
 
 .hide {
@@ -119,4 +124,3 @@ body {
 #progress-filename {
     font-size: 0.8em;
 }
-
